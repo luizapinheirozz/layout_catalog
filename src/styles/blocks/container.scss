@@ -7,8 +7,8 @@
 }
 
 .container {
-  padding: 50px 40px;
-  max-width: 944px;
+  padding: $container-padding-vertical $container-padding-horizontal;
+  max-width: $container-max-width;
   display: grid;
   justify-items: center;
   justify-self: center;
@@ -22,15 +22,4 @@
       1024px: 4,
     )
   );
-}
-
-.card {
-  transition: transform 0.3s;
-  &:hover {
-    transform: scale(1.2);
-
-    .card__title {
-      color: #34568b;
-    }
-  }
 }

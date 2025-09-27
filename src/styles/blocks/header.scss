@@ -23,12 +23,12 @@
     font-size: 12px;
     font-weight: 500;
     text-decoration: none;
-    color: #060b35;
+    color: $main-accent;
     text-transform: uppercase;
     display: inline-block;
     line-height: 60px;
     margin: 0 10px;
-    transition: color 0.3s;
+    transition: color $transition-duration;
 
     &:hover {
       color: $header-primary-color;
