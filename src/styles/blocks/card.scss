@@ -2,18 +2,10 @@
   box-sizing: border-box;
   width: $card-width;
   border-radius: $border-radius;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $card-border-color;
   padding-block: 32px 16px;
   transition: transform $transition-duration;
-
-  &:hover {
-    transform: scale(1.2);
-    transform-origin: center center;
-
-    .card__title {
-      color: $card-title-hover;
-    }
-  }
+  will-change: transform;
 
   &__image {
     box-sizing: border-box;
@@ -100,6 +92,16 @@
       background: $button-color;
       border-color: $blue-accent;
       color: $blue-accent;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    transform-origin: center center;
+    z-index: 1;
+
+    .card__title {
+      color: $card-title-hover;
     }
   }
 }

@@ -1,7 +1,7 @@
 .header {
   box-sizing: border-box;
   width: 100%;
-  padding: 0 50px;
+  padding: $header-padding-vertical $header-padding-horizontal;
   display: flex;
   align-items: center;
   justify-content: space-between;
